@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+   text-decoration: none;
+   color: white;
+}
+
+body {
+    background: #221F1F;
+    color: #FFFFFF;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+}
+
+main {
+    width: 50%;
+    height: 100%;
+}
+
+header {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    padding: 2rem;
+    cursor: pointer;
+}
+
+.fa-github {
+    font-size: 2rem;
+}
+
+.pfp {
+    border-radius: 100%;
+    height: 100px;
+    width: 50px;
+}
+
+nav {
+    display: flex;
+    gap: 2rem;
+}
+
+.name {
+    font-weight: 600;
+}
+
+.resume {
+    margin-left: 1rem;
+}
+
+.hero {
+    padding: 2rem;
+    padding-top: 5rem;
+}
+
+
+.left h1 {
+    color: #A6BBCC;
+    font-weight: 700;
+    font-size: 100px;
+    line-height: 1;
+}
+
+.left span {
+    font-size: 18px;
+}
+
+#contact {
+    font-weight: 600;
+    text-decoration: none;
+    position: relative;
+    color: white;
+    font-size: 18px;
+}
+
+#contact::after {
+    content: '';
+
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+
+    border-width: 0 0 1px;
+    border-style: solid;
+}
+
+.about {
+    padding: 2rem;
+    padding-top: 5rem;
+}
+
+.head {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.head h2 {
+    font-size: 60px;
+    color: #A6BBCC;
+}
+
+.line {
+    width: 80%;
+    height: 2px;
+    border-radius: 10px;
+    background: #A6BBCC;
+}
+
+.about p {
+    margin-top: 10px;
+    padding-right: 6rem;
+    padding-left: 4rem;
+}
+
+.about ul {
+    list-style: none;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    gap: 2rem;
+    font-size: 30px;
+}
+
+
+.skills {
+    padding: 2rem;
+}
+
+.languages {
+    font-size: 4rem;
+    float: right;
+    display: flex;
+    gap: 5rem;
+}
+
+.languages > * {
+    cursor: pointer;
+}
+
+
+.projects {
+    margin-top: 4rem;
+    padding: 2rem;
+}
+
+
+.box {
+    display: flex;
+}
+
+.box a {
+    width: 50%;
+    padding: 1rem;
+}
+
+.project {
+    width: 100%;
+}
+
+.project::hover {
+    opacity: .5;
+}
+
+.project h3 {
+    font-weight: 700;
+    margin-top: 1rem;
+}
+
+.project img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.project ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin: 0;
+    opacity: .7;
+}
+
+
+.contacts {
+    padding: 2rem;
+}
+
+.contacts p {
+    padding-left: 2rem;
+    font-size: 15px;
+}
+
+
+.form-container {
+    display: flex;
+    float: right;
+    flex-direction: column;
+    width: 300px;
+}
+
+.form-field {
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button[type="submit"] {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+footer {
+    margin-top: 10rem;
+    padding: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer span {
+    font-size: 1.2rem;
+}
+
+footer nav {
+    margin-right: 3rem;
+    font-size: 2rem;
+}
+
+footer nav a i {
+    color: white;
+}
+
+
+@media (max-width: 767px) {
+    * {
+	padding: 0;
+    }
+
+    main {
+	width: 100%;
+    }
+
+    .hero {
+	width: 100%;
+	display: flex;
+    }
+
+    .hero > * {
+	flex: 1;
+    }
+
+    .left {
+	width: 200px;
+    }
+
+    .pfp {
+	flex: 0;
+    }
+
+    .left h1 {
+	font-size: 60px;
+    }
+
+    .about ul {
+	padding: 0;
+	padding-top: 3rem;
+    }
+
+    .about ul li {
+	font-size: 20px;
+    }
+
+    .languages {
+	padding: 0;
+	font-size: 25px;
+	margin-top: 20px;
+    }
+
+    .box {
+	flex-direction: column;
+    }
+
+    .box a {
+	width: 100%;
+    }
+
+    .project {
+	width: 100%;
+    }
+
+    .contacts p {
+	margin-bottom: 1rem;
+    }
+
+    footer {
+	padding: 1;
+    }
+}
